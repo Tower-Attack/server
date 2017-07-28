@@ -6,8 +6,8 @@ module.exports = {
     client: 'pg',
     connection: 'postgresql://localhost/towerattack'
   },
-//   production: {
-//     client: 'pg',
-//     connection: {}
-// }
+  production: {
+    client: 'pg',
+    connection: process.env.DATABASE_URL
+  }
 };
