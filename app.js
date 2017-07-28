@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors())
 
-// app.use('/', auth);
+app.use('/', auth);
 app.use('/game', game);
 
 // catch 404 and forward to error handler

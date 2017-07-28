@@ -6,5 +6,8 @@ module.exports = {
   },
   getOneTower: (id) => {
     return knex('tower').where('id', id).first();
+  },
+  getOnePlayer: (id) => {
+    return knex('player').where('id', id).first();
   }
 }
